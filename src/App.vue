@@ -56,7 +56,7 @@ export default {
     FooterSection,
     FooterCopyright,
     BackgroundWrapper,
-    FloatBalls,
+    FloatBalls
   },
   mounted() {
     this.$nextTick(() => {
@@ -66,7 +66,7 @@ export default {
   methods: {
     getWindowWidth() {
       this.$store.dispatch("setWindowWidth", window.innerWidth);
-    },
+    }
   },
   computed: {
     isListClose() {
@@ -86,11 +86,11 @@ export default {
     },
     title3() {
       return this.$store.getters.getSlideTitle(3);
-    },
+    }
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.getWindowWidth);
-  },
+  }
 };
 </script>
 

@@ -22,9 +22,7 @@
     </div>
     <ul class="option-group">
       <li class="option">
-        <span class="search"
-          ><img src="../assets/img/search.png" alt=""
-        /></span>
+        <span class="search"><img src="../assets/img/search.png" alt=""/></span>
       </li>
       <li class="option">
         <span :class="{ choose_lang: lang == 'En' }" @click="lang = 'En'"
@@ -48,15 +46,15 @@
 <script>
 export default {
   name: "NavBar",
-  data: function () {
+  data: function() {
     return {
-      lang: "En",
+      lang: "En"
     };
   },
   methods: {
     listOpen(bool) {
       this.$store.dispatch("setListClose", bool);
-    },
+    }
   },
   computed: {
     linkList() {
@@ -67,11 +65,10 @@ export default {
     },
     isListClose() {
       return this.$store.getters.getListClose;
-    },
-  },
+    }
+  }
 };
 </script>
-
 
 <style scoped lang="scss">
 nav {

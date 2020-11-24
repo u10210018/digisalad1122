@@ -52,7 +52,7 @@ export default {
   name: "SliderCenter",
   components: {
     Swiper,
-    SwiperSlide,
+    SwiperSlide
   },
   props: ["slide-pic", "title"],
   data() {
@@ -65,30 +65,30 @@ export default {
           0: {
             slidesPerView: 1,
             spaceBetween: 10,
-            initialSlide: 0,
+            initialSlide: 0
           },
           600: {
             slidesPerView: 2,
             spaceBetween: 10,
-            initialSlide: 0,
+            initialSlide: 0
           },
           800: {
             slidesPerView: 3,
             spaceBetween: 10,
-            initialSlide: 0,
+            initialSlide: 0
           },
           1024: {
             slidesPerView: 4,
             spaceBetween: 30,
-            initialSlide: 0,
+            initialSlide: 0
           },
           1200: {
             slidesPerView: 4,
             spaceBetween: 30,
-            initialSlide: 1,
-          },
-        },
-      },
+            initialSlide: 1
+          }
+        }
+      }
     };
   },
   mounted() {
@@ -105,11 +105,10 @@ export default {
     slideIsEnd() {
       this.isBeginning = this.$refs.mySwiper.$swiper.isBeginning;
       this.isEnd = this.$refs.mySwiper.$swiper.isEnd;
-    },
-  },
+    }
+  }
 };
 </script>
-
 
 <style scoped lang="scss">
 section {

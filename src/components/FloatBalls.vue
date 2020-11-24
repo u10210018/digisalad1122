@@ -8,10 +8,9 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  name: "FloatBalls",
+  name: "FloatBalls"
 };
 </script>
 
@@ -37,7 +36,7 @@ export default {
       "1": 0 50%,
       "2": 36.5% 50%,
       "3": 77% 50%,
-      "4": 119% 50%,
+      "4": 119% 50%
     );
     @each $num, $pos in $ballType {
       &.ball#{$num} {
@@ -49,7 +48,7 @@ export default {
       "2": 15%,
       "3": 35%,
       "4": 65%,
-      "5": 80%,
+      "5": 80%
     );
     @each $num, $pos in $lefts {
       &.left#{$num} {

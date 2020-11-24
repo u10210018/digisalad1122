@@ -49,26 +49,25 @@ export default {
     this.so = ScrollOut({
       scope: this.$el,
       offset: 150,
-      onShown: function (el) {
+      onShown: function(el) {
         el.animate(
           [
             { transform: "perspective(3000px) rotateX(-60deg) scale(0.9)" },
-            { transform: "perspective(3000px) rotateX(0deg) scale(1)" },
+            { transform: "perspective(3000px) rotateX(0deg) scale(1)" }
           ],
           1000
         );
       },
-      onHidden: function (el) {
+      onHidden: function(el) {
         el.style.opacity = 1;
-      },
+      }
     });
   },
   destroyed() {
     this.so.teardown();
-  },
+  }
 };
 </script>
-
 
 <style scoped lang="scss">
 section {

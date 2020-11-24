@@ -10,10 +10,9 @@
 
 <script>
 export default {
-  name: "BackgroundWrapper",
+  name: "BackgroundWrapper"
 };
 </script>
-
 
 <style scoped lang="scss">
 .background-wrapper {

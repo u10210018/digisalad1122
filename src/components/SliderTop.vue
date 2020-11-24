@@ -2,9 +2,7 @@
   <section>
     <swiper ref="mySwiper" class="swiper" :options="swiperOption">
       <template v-for="(v, i) in slidePic">
-        <swiper-slide :key="i"
-          ><img :src="v.link" :alt="v.name"
-        /></swiper-slide>
+        <swiper-slide :key="i"><img :src="v.link" :alt="v.name"/></swiper-slide>
       </template>
     </swiper>
     <div class="info">
@@ -64,7 +62,7 @@ export default {
   name: "SliderTop",
   components: {
     Swiper,
-    SwiperSlide,
+    SwiperSlide
   },
   props: ["slide-pic"],
   data() {
@@ -72,16 +70,16 @@ export default {
       swiperOption: {
         autoplay: {
           delay: 4000,
-          disableOnInteraction: false,
+          disableOnInteraction: false
         },
         loop: true,
         fadeEffect: {
-          crossFade: true,
+          crossFade: true
         },
-        effect: "fade",
+        effect: "fade"
       },
       activeNow: 0,
-      isGo: true,
+      isGo: true
     };
   },
   mounted() {
@@ -104,13 +102,13 @@ export default {
       setTimeout(() => {
         this.isGo = true;
       }, 50);
-    },
+    }
   },
   computed: {
-    infoIndex: function () {
+    infoIndex: function() {
       return this.activeNow == 0 ? 0 : this.activeNow - 1;
-    },
-  },
+    }
+  }
 };
 </script>
 

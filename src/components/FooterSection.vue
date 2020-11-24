@@ -57,16 +57,15 @@
 export default {
   name: "FooterSection",
   methods: {
-    gotoTop: function () {
+    gotoTop: function() {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: "smooth"
       });
-    },
-  },
+    }
+  }
 };
 </script>
-
 
 <style scoped lang="scss">
 footer {

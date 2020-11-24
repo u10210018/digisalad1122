@@ -25,10 +25,9 @@
 
 <script>
 export default {
-  name: "ContentSection",
+  name: "ContentSection"
 };
 </script>
-
 
 <style scoped lang="scss">
 section {

@@ -19,13 +19,13 @@
 <script>
 export default {
   name: "NavHam",
-  data: function () {
+  data: function() {
     return {};
   },
   methods: {
     listOpen(bool) {
       this.$store.dispatch("setListClose", bool);
-    },
+    }
   },
   computed: {
     linkList() {
@@ -36,11 +36,10 @@ export default {
     },
     isListClose() {
       return this.$store.getters.getListClose;
-    },
-  },
+    }
+  }
 };
 </script>
-
 
 <style scoped lang="scss">
 .fade-enter-active,

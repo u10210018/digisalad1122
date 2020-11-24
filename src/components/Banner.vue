@@ -19,23 +19,22 @@ export default {
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
-      onShown: function (el) {
+      onShown: function(el) {
         el.animate(
           [{ transform: "translateY(50px)" }, { transform: "translateY(0)" }],
           1000
         );
       },
-      onHidden: function (el) {
+      onHidden: function(el) {
         el.style.opacity = 1;
-      },
+      }
     });
   },
   destroyed() {
     this.so.teardown();
-  },
+  }
 };
 </script>
-
 
 <style scoped lang="scss">
 [data-scroll] {

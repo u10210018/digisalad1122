@@ -30,10 +30,9 @@
 
 <script>
 export default {
-  name: "FooterCopyright",
+  name: "FooterCopyright"
 };
 </script>
-
 
 <style scoped lang="scss">
 .copyright-wrapper {
