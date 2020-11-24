@@ -2,6 +2,8 @@
 
 DEMO- https://u10210018.github.io/digisalad1122/dist/index.html
 
+行動裝置展示- [responsinator.com/digisalad1122](https://www.responsinator.com/?url=https%3A%2F%2Fu10210018.github.io%2Fdigisalad1122%2Fdist%2Findex.html)
+
 ## 測試的內容
 <ol>
   <li>運用提供的素材，建構前端網頁</li>
