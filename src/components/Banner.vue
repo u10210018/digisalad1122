@@ -70,7 +70,7 @@ export default {
         border-bottom: 1px solid white;
       }
       &.slogan2 {
-        padding: 2rem 18rem;
+        padding: 2rem 21rem;
       }
       > img {
         width: 100%;

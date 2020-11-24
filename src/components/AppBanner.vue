@@ -76,7 +76,7 @@ section {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  background: linear-gradient(90deg, #ff780d 0%, #ffae05 100%);
+  background: linear-gradient(-120deg, #ffb804 2%, #ff710e 97%);
   padding: 150px calc(50vw - 720px);
   > .phonePic {
     position: absolute;
@@ -108,8 +108,8 @@ section {
     flex-flow: column nowrap;
     align-items: center;
     border: 1px solid white;
-    background-color: #fd7423bf;
-    padding: calc(2rem + 0.5vw) calc(1.5rem + 0.5vw);
+    background-color: rgba(255, 125, 0, 0.8);
+    padding: 48px 44px 36px;
     z-index: 8;
     &:hover {
       opacity: 0.6;
@@ -133,6 +133,7 @@ section {
       line-height: 1.5em;
       color: white;
       text-align: center;
+      margin-top: 17px;
     }
   }
   > .info {
@@ -142,15 +143,17 @@ section {
     padding: 0 5vw 0 8vw;
     color: white;
     > .title {
-      font-weight: 700;
+      font-weight: bold;
+      font-size: 2.25rem;
+      letter-spacing: 0.27px;
       font-size: 1.8rem;
-      line-height: 1.5em;
-      padding: 0 2vw 1rem 0;
+      line-height: 1.28em;
+      padding: 0 2vw 10px 0;
     }
     > .description {
       font-size: 1.2rem;
       line-height: 1.5em;
-      padding: 0.5rem 2vw 2rem 0;
+      padding: 0 2vw 30px 0;
     }
     > .buttons {
       display: flex;
@@ -158,7 +161,7 @@ section {
         border: none;
         border-radius: 5px;
         background: linear-gradient(90deg, #ffae05 0%, #ff780d 100%);
-        box-shadow: 0px 1px 7px 0px rgba(50, 50, 50, 0.35);
+        box-shadow: 0 20px 20px 0 #f07600;
         &:hover {
           opacity: 0.6;
         }
@@ -170,11 +173,15 @@ section {
           }
         }
         > a {
-          font-size: 1.2rem;
-          display: inline-block;
+          display: flex;
+          align-items: center;
+          height: 22px;
+          padding: 9px 21px;
+          font-family: Muli;
+          font-size: 15px;
+          font-weight: 600;
           text-decoration: none;
           color: white;
-          padding: 0.75rem 1rem;
         }
       }
     }

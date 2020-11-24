@@ -92,7 +92,7 @@ footer {
         flex-flow: column nowrap;
         > li {
           &:first-child {
-            font-weight: 700;
+            font-weight: bold;
             > a {
               cursor: initial;
             }
@@ -100,7 +100,8 @@ footer {
           > a {
             display: inline-block;
             text-decoration: none;
-            font-size: 1rem;
+            font-family: Muli;
+            font-size: 14px;
             color: #222222;
             cursor: pointer;
             padding: 0.375rem;
@@ -117,8 +118,8 @@ footer {
       justify-content: space-between;
       padding-top: 6px;
       > .title {
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: bold;
       }
       > a {
         border: 1px solid #222222;
@@ -127,6 +128,7 @@ footer {
         padding: 10px;
         height: 60px;
         width: 60px;
+        margin: 12px 0 20px;
 
         > img {
           width: 100%;
@@ -150,8 +152,8 @@ footer {
       }
     }
     > a {
-      flex: 0 1 200px;
-      padding: 50px;
+      flex: 0 1 189px;
+      padding: 50px 102px;
       > img {
         width: 100%;
         height: 100%;
@@ -182,6 +184,15 @@ footer {
 
       &.top {
         transform: translateY(2px) rotate(45deg);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    > .site-map {
+      > .download-group {
+        padding: 6px 120px;
       }
     }
   }

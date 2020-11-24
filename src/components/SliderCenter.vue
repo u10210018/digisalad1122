@@ -26,15 +26,17 @@
             <a class="card-pic" href="javaScript:void(0)">
               <img :src="v.link" :alt="v.name" />
             </a>
-            <h3 class="card_name">{{ v.name }}</h3>
-            <div class="card_place">
-              <h4 class="type">{{ v.type }}</h4>
-              <span class="position">
-                <span class="marker"
-                  ><img src="../assets/img/marker.png" alt="marker"
-                /></span>
-                <span class="floor">{{ v.position }}</span>
-              </span>
+            <div class="card-bottom">
+              <h3 class="card_name">{{ v.name }}</h3>
+              <div class="card_place">
+                <h4 class="type">{{ v.type }}</h4>
+                <span class="position">
+                  <span class="marker"
+                    ><img src="../assets/img/marker.png" alt="marker"
+                  /></span>
+                  <span class="floor">{{ v.position }}</span>
+                </span>
+              </div>
             </div>
           </div>
         </swiper-slide>
@@ -65,7 +67,7 @@ export default {
             spaceBetween: 10,
             initialSlide: 0,
           },
-          325: {
+          600: {
             slidesPerView: 2,
             spaceBetween: 10,
             initialSlide: 0,
@@ -130,15 +132,16 @@ section {
       align-items: baseline;
       > .title {
         color: #222222;
-        font-weight: 700;
-        font-size: 1.8rem;
+        font-weight: bold;
+        font-size: 2.25rem;
         line-height: 1.5em;
       }
       > .description {
+        font-weight: normal;
         color: #222222;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         line-height: 1.5em;
-        padding: 0.5rem 0 2rem;
+        padding: 8px 0 50px;
       }
     }
     > .buttons {
@@ -170,6 +173,7 @@ section {
       }
       > a {
         color: #222222;
+        font-size: 15px;
         text-decoration: none;
         padding: 8px 0 0;
         margin-left: 20px;
@@ -188,7 +192,7 @@ section {
       > .swiper-slide {
         > .card {
           position: relative;
-          height: 300px;
+          height: 316px;
           background-color: white;
           display: flex;
           flex-flow: column nowrap;
@@ -210,29 +214,38 @@ section {
               }
             }
           }
-          > .card_name {
-            font-size: 1rem;
-            line-height: 1.5em;
-            padding: 1rem 0.8rem 0;
-          }
-          > .card_place {
-            padding: 0.375rem 0.8rem;
-            display: flex;
-            justify-content: space-between;
-            > .type {
-              font-size: 0.8rem;
-              line-height: 2em;
-            }
-            > .position {
+          > .card-bottom {
+            padding: 20px 24px 21px;
+            > .card_name {
+              font-weight: 600;
               display: flex;
               align-items: center;
-              > .marker {
-                height: 1.5rem;
-                > img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: contain;
-                  transform: translate(7px, 1px);
+              height: 24px;
+              font-size: 1rem;
+              letter-spacing: 0.12px;
+            }
+            > .card_place {
+              display: flex;
+              height: 24px;
+              justify-content: space-between;
+              > .type {
+                font-size: 0.88rem;
+                line-height: 2em;
+              }
+              > .position {
+                display: flex;
+                align-items: center;
+                > .marker {
+                  height: 1.25rem;
+                  > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transform: translate(7px, 1px);
+                  }
+                }
+                > .floor {
+                  font-size: 0.88rem;
                 }
               }
             }

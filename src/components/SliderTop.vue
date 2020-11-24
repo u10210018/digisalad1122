@@ -26,23 +26,23 @@
           </div>
         </div>
         <div class="circle-outer" @click="slideNext">
-          <svg class="outer-wapper" width="50" height="50">
+          <svg class="outer-wapper" width="60" height="60">
             <circle
               :class="['outer']"
-              cx="25"
-              cy="25"
-              r="23"
-              transform="rotate(-90, 25, 25)"
+              cx="30"
+              cy="30"
+              r="28"
+              transform="rotate(-90, 30, 30)"
               stroke="#e3e3e3"
               fill="transparent"
               stroke-width="2px"
             />
             <circle
               :class="['outer', { 'go-ani': isGo }]"
-              cx="25"
-              cy="25"
-              r="23"
-              transform="rotate(-90, 25, 25)"
+              cx="30"
+              cy="30"
+              r="28"
+              transform="rotate(-90, 30, 30)"
               stroke="#ffae05"
               fill="transparent"
               stroke-width="2px"
@@ -124,7 +124,7 @@ section {
   display: flex;
   flex-flow: row nowrap;
   > .swiper-container {
-    flex: 2 1 auto;
+    flex: 0 1 860px;
     > .swiper-wrapper {
       > .swiper-slide {
         > img {
@@ -144,23 +144,29 @@ section {
     justify-content: center;
     align-items: baseline;
     > .page-number {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       color: #ff7d00;
       line-height: 1.5em;
+      font-weight: bold;
+      letter-spacing: 0.15px;
     }
     > .title {
       color: #222222;
-      font-weight: 700;
-      font-size: 1.8rem;
-      line-height: 1.5em;
+      font-weight: bold;
+      font-size: 2.25rem;
+      letter-spacing: 0.27px;
+      margin: 10px 0;
+      line-height: 1.28em;
     }
     > .description {
       color: #222222;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       line-height: 1.5em;
-      padding: 0.5rem 0 1rem;
+      letter-spacing: 0.15px;
+      margin-bottom: 30px;
     }
     > .primary-btn {
+      padding: 0;
       border: none;
       border-radius: 5px;
       background: linear-gradient(90deg, #ffae05 0%, #ff780d 100%);
@@ -168,31 +174,34 @@ section {
         opacity: 0.6;
       }
       > a {
-        font-size: 1.2rem;
-        display: inline-block;
+        font-family: Muli;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        height: 22px;
         text-decoration: none;
         color: white;
-        padding: 0.75rem 1rem;
+        padding: 9px 21px;
       }
     }
     > .slide-nav {
       display: flex;
       justify-content: space-around;
       flex-flow: row nowrap;
-      height: 50px;
+      height: 60px;
       width: 160px;
       position: absolute;
       right: 5px;
       bottom: 20px;
       > .circle-outer {
         display: flex;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         > .outer-wapper {
           position: absolute;
           > .outer {
-            stroke-dasharray: 145;
+            stroke-dasharray: 177;
             &.go-ani {
               animation: show100 4s linear;
             }
@@ -200,8 +209,8 @@ section {
         }
         > .circle-inner {
           display: flex;
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           transform: translate(0, -2px);
           .arrow {
@@ -215,10 +224,10 @@ section {
               opacity: 0.6;
             }
             &.left {
-              transform: translateX(5px) rotate(-45deg);
+              transform: translate(-4px, 6px) rotate(-45deg);
             }
             &.right {
-              transform: translateX(-5px) rotate(135deg);
+              transform: translate(-4px, 6px) rotate(135deg);
             }
           }
         }
@@ -229,7 +238,7 @@ section {
 
 @keyframes show100 {
   from {
-    stroke-dashoffset: 145;
+    stroke-dashoffset: 177;
   }
 
   to {
@@ -237,18 +246,11 @@ section {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   section {
     flex-flow: row wrap;
     > .info {
       flex: 1 0 260px;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section {
-    > .info {
       > .title {
         font-size: 1.5rem;
       }

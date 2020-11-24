@@ -22,7 +22,9 @@
     </div>
     <ul class="option-group">
       <li class="option">
-        <span><img src="../assets/img/search.png" alt="" /></span>
+        <span class="search"
+          ><img src="../assets/img/search.png" alt=""
+        /></span>
       </li>
       <li class="option">
         <span :class="{ choose_lang: lang == 'En' }" @click="lang = 'En'"
@@ -88,8 +90,8 @@ nav {
   .nav-group {
     display: flex;
     > .logo {
-      flex: 0 0 120px;
-      padding: 1rem;
+      flex: 0 0 100px;
+      padding: 1rem 2.25vw 1rem 1rem;
       > a {
         display: inline-block;
         > img {
@@ -109,6 +111,9 @@ nav {
           padding: 0.375rem calc(0.2rem + 0.5vw);
           text-decoration: none;
           color: white;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.12px;
           &::after {
             display: block;
             content: "";
@@ -131,18 +136,20 @@ nav {
       justify-content: center;
       cursor: pointer;
       > span {
-        flex: 0 0 6px;
-        width: 45px;
+        flex: 0 0 3px;
+        width: 25px;
         background-color: white;
-        margin: 4px 0;
+        margin: 2px 0;
         border-radius: 20px;
         opacity: 1;
+        transform: translateY(-7px);
       }
     }
   }
   > .option-group {
     display: flex;
     align-content: center;
+    flex: 0 0 150px;
     > .option {
       display: flex;
       align-items: center;
@@ -153,14 +160,20 @@ nav {
         margin-right: 5px;
       }
       > span {
+        height: 20px;
         color: white;
         cursor: pointer;
         padding: 0 0 4px 0;
+        &.search {
+          height: 27px;
+          transform: translateY(-3px);
+        }
         &.choose_lang {
           padding: 0 0 2px 0;
           border-bottom: 2px solid white;
         }
         > img {
+          transform: translateX(-10px);
           width: 100%;
           height: 100%;
           object-fit: contain;

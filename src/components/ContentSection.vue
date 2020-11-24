@@ -37,7 +37,7 @@ section {
   max-width: 1440px;
   margin: 10vh auto;
   background-color: transparent;
-  height: 500px;
+  height: 650px;
   display: flex;
   > .left-info {
     flex: 1 1 40%;
@@ -45,39 +45,50 @@ section {
     > .title {
       color: #222222;
       font-weight: 700;
-      font-size: 1.8rem;
+      font-size: 2.25rem;
       line-height: 1.5em;
-      padding: 0 2vw 1rem 0;
+      padding: 0 2vw 10px 0;
+      letter-spacing: 0.27px;
     }
     > .description {
       color: #222222;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       line-height: 1.5em;
-      padding: 0.5rem 2vw 2rem 0;
+      letter-spacing: 0.15px;
+      padding: 0 2vw 30px 0;
     }
     > .buttons {
       display: flex;
+      height: 40px;
       > .primary-btn {
+        display: flex;
+        align-items: center;
         border: none;
+        padding: 0;
         border-radius: 5px;
-        background: linear-gradient(90deg, #ffae05 0%, #ff780d 100%);
+        background: linear-gradient(102deg, #ffb700 0%, #ff7d00 100%);
         &:hover {
           opacity: 0.6;
         }
         &.directory {
-          border: 1px solid #ff780d;
+          border: 1px solid #ff7800;
           background: white;
           margin-left: 30px;
           > a {
-            color: #ff780d;
+            color: #ff7800;
           }
         }
         > a {
-          font-size: 1.2rem;
-          display: inline-block;
+          font-family: muli, sans-serif;
+          display: flex;
+          align-items: center;
+          height: 40px;
           text-decoration: none;
           color: white;
-          padding: 0.75rem 1rem;
+          padding: 7px 21px;
+          font-size: 15px;
+          font-weight: 600;
+          letter-spacing: 0.13px;
         }
       }
     }

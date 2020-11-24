@@ -42,13 +42,13 @@ export default {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 10px calc(50vw - 720px);
+  min-height: 53px;
   > .left-info {
     display: flex;
     flex-flow: row wrap;
     > .copyright {
-      padding: 5px 20px;
-      font-size: 0.5rem;
+      padding: 5px calc(5px + 4vw);
+      font-size: 14px;
       line-height: 2.5em;
       color: white;
     }
@@ -56,7 +56,7 @@ export default {
       display: flex;
       align-items: center;
       line-height: 1.5em;
-      font-size: 0.5rem;
+      font-size: 14px;
       padding-left: 20px;
       color: white;
       padding: 5px 0 5px 20px;

@@ -108,17 +108,17 @@ nav {
       position: absolute;
       right: 10%;
       top: 5%;
-      height: 55px;
+      height: 50px;
 
       > span {
-        flex: 0 0 6px;
-        width: 45px;
+        flex: 0 0 5px;
+        width: 35px;
         background-color: white;
-        margin: 4px 0;
+        margin: 3px 0;
         border-radius: 20px;
         opacity: 1;
         &:first-child {
-          transform: translateY(14px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
         }
         &:last-child {
           transform: rotate(-45deg);

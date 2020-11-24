@@ -17,7 +17,7 @@
         :slide-pic="slidePic3"
         :title="title3"
         data-aos="fade-left"
-        data-aos-anchor-placement="bottom-bottom"
+        data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-sine"
       ></SliderCenter>
     </BackgroundWrapper>
@@ -95,11 +95,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://use.typekit.net/xrh5bor.css");
 #app {
+  font-family: muli, sans-serif;
   position: relative;
   background-color: white;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
   &.overflow {
     width: 100%;
