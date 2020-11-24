@@ -174,8 +174,8 @@ section {
         > a {
           display: flex;
           align-items: center;
-          height: 22px;
-          padding: 9px 21px;
+          height: 40px;
+          padding: 0 21px;
           font-family: Muli;
           font-size: 15px;
           font-weight: 600;

@@ -58,7 +58,6 @@ section {
     }
     > .buttons {
       display: flex;
-      height: 40px;
       > .primary-btn {
         display: flex;
         align-items: center;
@@ -84,7 +83,7 @@ section {
           height: 40px;
           text-decoration: none;
           color: white;
-          padding: 7px 21px;
+          padding: 0 21px;
           font-size: 15px;
           font-weight: 600;
           letter-spacing: 0.13px;

@@ -176,10 +176,10 @@ section {
         display: flex;
         align-items: center;
         font-size: 15px;
-        height: 22px;
+        height: 40px;
         text-decoration: none;
         color: white;
-        padding: 9px 21px;
+        padding: 0 21px;
       }
     }
     > .slide-nav {
